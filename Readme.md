@@ -61,6 +61,8 @@ dotnet test
 ## Future Improvements
 - Email notification integration
 - Document searching
+- Paging
+- Allow user share own documents
 - Request analytics dashboard
 - Access expiration management
 - Change documentId to guid
