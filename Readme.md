@@ -28,7 +28,9 @@ This API provides a secure way to manage access requests for internal documents 
 - Docker desktop is required for running the application in a containerized environment.
 - For testing i have created 3 separate user accounts - without password: user@edw.com, approver@edw.com, admin@edw.com
 - New user can be registered but then admin needs to assign role to the user.
-
+- After document request is submitted events are emmited allowing for future implementation
+- Only one request per document is allowed
+- No change of decision is possible
 
 ### Prerequisites
 - .NET 8.0 SDK
@@ -38,8 +40,7 @@ This API provides a secure way to manage access requests for internal documents 
 1. Clone the repository
 2. Navigate to the project directory
 3. Run `dotnet restore`
-4. Run `dotnet ef database update`
-5. Start the application:
+4. Start the application:
 
       dotnet run --project EdwDemo.Api
    
@@ -69,3 +70,4 @@ dotnet test
 - Full documentation
 - Test for all endpoints and handlers
 - Integration tests
+- Modify access for document
